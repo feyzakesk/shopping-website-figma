@@ -11,7 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    
+
 }
 body{
     font-family: "Poppins", sans-serif;
@@ -23,7 +23,7 @@ header{
     margin-right: 80px;
 }
 nav{
-    
+
     display: flex;
     justify-content: space-between;
 }
@@ -37,10 +37,10 @@ nav{
 .nav-right ul{
     display: flex;
     padding: 20px;
-    
+
 }
 .nav-right ul li {
-    margin-right: 20px; 
+    margin-right: 20px;
     text-transform: uppercase;
     display: flex;
     text-align: center;
@@ -54,8 +54,8 @@ nav{
     border-radius: 10px;
     font-size: 1.2rem;
 }
-    
-.first-section{ 
+
+.first-section{
     margin-top: 56px;
     background-color: #E7E6E6;
     border-radius: 40px;
@@ -91,12 +91,12 @@ nav{
     width: 550px;
     padding-right: 10px;
     height: 500px;
-    
+
 }
 .logoes{
     width: 100%;
     margin-top: 45px;
-    
+
 }
 .logoes ul{
     display: flex;
@@ -110,7 +110,7 @@ nav{
 }
 .second-section-top img{
     width: 250px;
-    
+
 }
 .second-section-bottom{
     display: flex;
@@ -144,7 +144,7 @@ nav{
 .third-section-left img{
     width: 500px;
     padding-left: 0;
-    
+
 }
 .third-section-right img{
     width: 300px;
@@ -197,7 +197,7 @@ nav{
 .fifth-section-left h3{
     font-weight: bold;
     font-size: 10px;
-    
+
 }
 .fifth-section-right img{
     width: 300px;
@@ -230,7 +230,7 @@ nav{
 .input-with-button-inside input {
     width: 100%;
     padding: 18px;
-    padding-right: 80px; 
+    padding-right: 80px;
     border: none;
 }
 
@@ -266,7 +266,7 @@ footer{
     border-radius: 30%;
     padding: 8px;
     border: none;
-    
+
 }
 .links{
     display: flex;
@@ -276,18 +276,172 @@ footer{
     color: black;
     font-size: 16px;
     font-weight: 700;
-   
+
 }
 .footer-right{
     display: flex;
-    gap: 100px;
-    
+    /* gap: 100px; */
+
 }
-.footer-right ul{
+.footer-right ul li{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 50px;
 }
 .selected{
     font-size: 14px;
 }
+
+.nav-box {
+    display: none;
+    position: fixed;
+    top: 110px;
+    left: 140px;
+    width: 60%;
+    height: 60%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.nav-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-box li {
+    margin: 20px 0;
+
+}
+
+.nav-box .sign-up {
+    margin-top: 30px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .nav-right ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    
+
+    .nav-box {
+        display: none;
+    }
+    .first-section{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .logoes ul li{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .second-section-bottom{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-left: 50px;
+    }
+    .second-section-bottom img{
+        width: 80%;
+        height: 600px;
+    }
+    .bottom{
+        width: 80%;
+    }
+    .p-content{
+        font-size: 24px;
+    }
+    .explore{
+        font-size: 18px;
+    }
+    .bottom i{
+        font-size: 30px;
+        opacity: 0.7;
+    }
+    .third-section-left{
+        width: 50%;
+    }
+    .third-section-left img{
+        width: 300px;
+        height: 400px;
+        margin-top: 10px;
+    }
+    .third-section-right{
+        display: flex;
+        flex-direction: column;
+    }
+    .third-section-right img{
+        width: 200px;
+    }
+    .fourth-section{
+        margin-left: 80px;
+    }
+    .fourth-section-bottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .fourth{
+        width: 80%;
+    }
+    .fourth-bottom div i{
+        font-size: 30px;
+        opacity: 0.7;
+    }
+    .fifth-section{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+         margin-left: 60px;
+        width: 80%;
+        align-items: center;
+        text-align: center;
+        margin-top: 80px;
+
+    }
+    .input-with-button-inside{
+        margin-top: 20px;
+        margin-left: 60px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .footer-right{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    
+
+
+}
+
+
+
